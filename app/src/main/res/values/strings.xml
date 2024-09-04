@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AplicacionInventario</string>
+    <string name="signup_text">¿No tienes cuenta? <a href="http://www.tuweb.com/registro">Regístrate</a></string>
+</resources>
