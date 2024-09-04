@@ -10,19 +10,19 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:background="@drawable/gradient_rl1"
+        android:gravity="center"
         android:orientation="vertical">
 
 
         <RelativeLayout
             android:layout_width="500dp"
             android:layout_height="400dp"
-            android:paddingTop="125dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/gradient_rl2"
-            android:gravity="center">
+            android:gravity="center"
+            android:paddingTop="125dp">
 
             <EditText
                 android:layout_width="300dp"
@@ -30,8 +30,7 @@
                 android:layout_marginLeft="50dp"
                 android:background="@drawable/edittext"
                 android:hint="    Ingrese su usuario"
-                android:textColorHint="#ffffff">
-                </EditText>
+                android:textColorHint="#ffffff"></EditText>
 
             <ImageView
                 android:layout_width="55dp"
@@ -39,89 +38,84 @@
                 android:layout_marginLeft="-1dp"
                 android:layout_marginTop="-10px"
                 android:background="@drawable/baseline_user"
-                android:backgroundTint="@color/black">
-            </ImageView>
+                android:backgroundTint="@color/black"></ImageView>
 
             <CheckBox
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="152dp"
-                android:layout_marginLeft="2dp">
-            </CheckBox>
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="152dp"></CheckBox>
 
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="20dp"
-                android:textColor="@color/tex"
-                android:textSize="15dp"
-                android:text="Recordar contraseña"
                 android:layout_marginLeft="35dp"
-                android:layout_marginTop="160dp">
+                android:layout_marginTop="160dp"
+                android:text="Recordar contraseña"
+                android:textColor="@color/tex"
+                android:textSize="15dp">
 
             </TextView>
 
             <TextView
                 android:layout_width="170dp"
                 android:layout_height="20dp"
-                android:textColor="@color/tex"
-                android:text="Recuperar la contraseña"
                 android:layout_marginLeft="200dp"
-                android:textSize="15dp"
+                android:layout_marginTop="160dp"
                 android:autoLink="web"
                 android:linksClickable="true"
-                android:layout_marginTop="160dp">
-            </TextView>
+                android:text="Recuperar la contraseña"
+                android:textColor="@color/tex"
+                android:textSize="15dp"></TextView>
 
             <TextView
                 android:layout_width="170dp"
                 android:layout_height="20dp"
-                android:textColor="@color/tex"
-                android:text="Crear cuenta"
-                android:textSize="15dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="190dp"
                 android:autoLink="web"
                 android:gravity="center"
                 android:linksClickable="true"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="190dp">
-            </TextView>
+                android:text="Crear cuenta"
+                android:textColor="@color/tex"
+                android:textSize="15dp"></TextView>
 
 
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:background="@drawable/edittext"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/edittext"
                 android:hint="    Ingrese su contraseña"
-                android:textColorHint="#ffffff"
-                android:layout_marginTop="80dp">
-            </EditText>
+                android:textColorHint="#ffffff"></EditText>
+
             <ImageView
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:layout_marginLeft="-1dp"
                 android:layout_marginTop="200px"
                 android:background="@drawable/baseline_lock_24"
-                android:backgroundTint="@color/black">
-            </ImageView>
+                android:backgroundTint="@color/black"></ImageView>
 
         </RelativeLayout>
 
         <TextView
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:layout_marginTop="100dp"
             android:layout_marginLeft="130dp"
-            android:textSize="30dp"
+            android:layout_marginTop="100dp"
+            android:text="Bienvenido"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:text="Bienvenido">
+            android:textSize="30dp"
+            android:textStyle="bold">
 
         </TextView>
 
         <ImageView
             android:layout_width="500px"
             android:layout_height="500px"
-            android:layout_marginLeft="115dp"
+            android:layout_marginLeft="110dp"
             android:layout_marginTop="-80dp"
             android:background="@drawable/baseline_usercircle">
 
@@ -130,12 +124,26 @@
         <Button
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:text="Ingresar"
-            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="410dp"
-            android:layout_marginLeft="30dp">
+            android:text="Ingresar"
+            android:textSize="20dp">
 
         </Button>
     </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
