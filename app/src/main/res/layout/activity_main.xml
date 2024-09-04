@@ -27,95 +27,108 @@
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
                 android:background="@drawable/edittext"
-                android:hint="    Ingrese su usuario"
-                android:textColorHint="#ffffff"></EditText>
+                android:hint="@string/ingresaUsuario"
+                android:paddingStart="18dp"
+                android:textColorHint="#ffffff"
+                android:textColor="#FFFFFF">
+            </EditText>
 
             <ImageView
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:layout_marginLeft="-1dp"
-                android:layout_marginTop="-10px"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="-1dp"
                 android:background="@drawable/baseline_user"
-                android:backgroundTint="@color/black"></ImageView>
+                android:backgroundTint="@color/black">
+            </ImageView>
 
             <CheckBox
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="2dp"
-                android:layout_marginTop="152dp"></CheckBox>
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="152dp">
+            </CheckBox>
 
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
                 android:layout_marginTop="160dp"
-                android:text="Recordar contraseña"
+                android:text="@string/contraseña1"
                 android:textColor="@color/tex"
-                android:textSize="15dp">
-
+                android:textSize="15sp">
             </TextView>
 
             <TextView
                 android:layout_width="170dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="200dp"
+                android:layout_marginStart="200dp"
                 android:layout_marginTop="160dp"
                 android:autoLink="web"
                 android:linksClickable="true"
-                android:text="Recuperar la contraseña"
+                android:text="@string/contraseña2"
                 android:textColor="@color/tex"
-                android:textSize="15dp"></TextView>
+                android:textSize="15sp">
+            </TextView>
 
             <TextView
                 android:layout_width="170dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
                 android:layout_marginTop="190dp"
                 android:autoLink="web"
                 android:gravity="center"
                 android:linksClickable="true"
-                android:text="Crear cuenta"
+                android:text="@string/crearLogin"
                 android:textColor="@color/tex"
-                android:textSize="15dp"></TextView>
+                android:textSize="15sp">
+            </TextView>
 
 
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
                 android:layout_marginTop="80dp"
+                android:inputType="textPassword"
+                android:paddingStart="18sp"
                 android:background="@drawable/edittext"
-                android:hint="    Ingrese su contraseña"
-                android:textColorHint="#ffffff"></EditText>
+                android:hint="@string/ingresarContraseña"
+                android:textColorHint="#ffffff"
+                android:textColor="#FFFFFF">
+            </EditText>
 
             <ImageView
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:layout_marginLeft="-1dp"
-                android:layout_marginTop="200px"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="78dp"
                 android:background="@drawable/baseline_lock_24"
-                android:backgroundTint="@color/black"></ImageView>
+                android:backgroundTint="@color/black">
+            </ImageView>
 
         </RelativeLayout>
 
         <TextView
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="130dp"
+            android:layout_marginStart="110dp"
             android:layout_marginTop="100dp"
-            android:text="Bienvenido"
+            android:text="@string/bienvenido"
+            android:gravity="center"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textStyle="bold">
 
         </TextView>
 
         <ImageView
-            android:layout_width="500px"
-            android:layout_height="500px"
-            android:layout_marginLeft="110dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:layout_marginStart="105dp"
             android:layout_marginTop="-80dp"
             android:background="@drawable/baseline_usercircle">
 
@@ -124,10 +137,10 @@
         <Button
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="410dp"
-            android:text="Ingresar"
-            android:textSize="20dp">
+            android:text="@string/ingresar"
+            android:textSize="20sp">
 
         </Button>
     </RelativeLayout>

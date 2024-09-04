@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">AplicacionInventario</string>
+    <string name="contraseña1">Recordar Contraseña</string>
+    <string name="contraseña2">Recuperar Contraseña</string>
+    <string name="ingresaUsuario">Ingrese su Usuario</string>
+    <string name="ingresarContraseña">Ingrese su Contraseña</string>
+    <string name="crearLogin">Crear Cuenta</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="ingresar">Ingresar</string>
     <string name="signup_text">¿No tienes cuenta? <a href="http://www.tuweb.com/registro">Regístrate</a></string>
 </resources>
