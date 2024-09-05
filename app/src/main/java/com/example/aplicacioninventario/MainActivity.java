@@ -1,12 +1,19 @@
 package com.example.aplicacioninventario;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private EditText user;
+    private EditText password;
+    private Button ingresar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
