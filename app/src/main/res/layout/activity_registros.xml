@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Primer RelativeLayout que contiene todo -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_rl1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Segundo RelativeLayout donde estarán los campos -->
+        <RelativeLayout
+            android:layout_width="600dp"
+            android:layout_height="760dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/gradient_rl2"
+            android:gravity="center"
+            android:paddingTop="30dp">
+
+            <!-- Campo: Nombre del Producto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Producto"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/nombreProducto"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el nombre del producto"
+                android:layout_below="@id/NombreProducto"/>
+
+            <!-- Campo: Código de Barras -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Código de Barras"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/codigoBarras"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el código de barras"/>
+
+            <!-- Campo: Descripción -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/descripcion"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese una descripción"/>
+
+            <!-- Campo: Cantidad -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/cantidad"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese la cantidad"/>
+
+            <!-- Botón: Escanear Código de Barras -->
+            <Button
+                android:id="@+id/btnEscanearCodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escanear Código de Barras"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Botón: Crear Código de Barras -->
+            <Button
+                android:id="@+id/btnCrearCodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crear Código de Barras"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+
+        <!-- Botón de Aceptar, fuera del segundo RelativeLayout -->
+        <Button
+            android:id="@+id/btnGuardarr"
+            android:layout_width="210dp"
+            android:gravity="center"
+            android:fontFamily="@font/Roboto"
+            android:textSize="15dp"
+            android:layout_marginStart="55dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:backgroundTint="@color/botton"
+            android:layout_marginTop="700dp">
+        </Button>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
