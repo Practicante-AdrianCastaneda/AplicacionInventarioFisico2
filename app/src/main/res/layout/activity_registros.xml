@@ -32,9 +32,8 @@
                 android:id="@+id/nombreProducto"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:hint="Ingrese el nombre del producto"
-                android:layout_below="@id/NombreProducto"/>
-
+                android:hint="Ingrese el nombre del producto">
+            </EditText>
             <!-- Campo: Código de Barras -->
             <TextView
                 android:layout_width="wrap_content"
@@ -97,7 +96,6 @@
             android:id="@+id/btnGuardarr"
             android:layout_width="210dp"
             android:gravity="center"
-            android:fontFamily="@font/Roboto"
             android:textSize="15dp"
             android:layout_marginStart="55dp"
             android:layout_height="wrap_content"
